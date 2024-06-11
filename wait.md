@@ -113,9 +113,9 @@
     console.log('跑完了:', mingRun);
     let auntieRun = await runPromise('漂亮阿姨', 2500);
     console.log('跑完了:', auntieRun);
-  * async
-    * 它的結構非常類似 Promise，只不過他能夠將 await 包在裡面，被包在裡面的 await 就如同先前的結構一樣，他會依序地執行。
-    * async 本身也是類似 Promise，在正確執行的情況下 return 會傳回 resolved 的狀態，也可以使用 then 來接收正確的資料。
+* async
+   * 它的結構非常類似 Promise，只不過他能夠將 await 包在裡面，被包在裡面的 await 就如同先前的結構一樣，他會依序地執行。
+   * async 本身也是類似 Promise，在正確執行的情況下 return 會傳回 resolved 的狀態，也可以使用 then 來接收正確的資料。
       ```CSS
       const asyncRun = async () => {
         let mingRun = await runPromise('小明', 2000);
