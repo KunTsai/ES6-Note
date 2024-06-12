@@ -66,22 +66,22 @@
   * 有兩個參數可用:
     * onFulfilled是當promise物件執行成功，狀態為實現（fulfilled）呼叫的函式，並有一個傳入值(value)做後續的運算。
     * onRejected是當promise物件執行失敗，狀態為拒絕（rejected）呼叫的函式，一樣有一個傳入值(reason)做後續的處理。
-  ```CSS
-  async ('ABC').then(
-    response => {
-        console.log(`第1次輸入值：${response}`);
-        return async ('DEF');
-    }, error => {
-        console.log(`錯誤：${error}`);
-    }
-  ).then(
-    response => {
-        console.log(`第2次輸入值：${response}`);
-    }, error => {
-        console.log(`錯誤：${error}`);
-    }
-  );
-  ```
+    ```CSS
+    async ('ABC').then(
+      response => {
+          console.log(`第1次輸入值：${response}`);
+          return async ('DEF');
+      }, error => {
+          console.log(`錯誤：${error}`);
+      }
+    ).then(
+      response => {
+          console.log(`第2次輸入值：${response}`);
+      }, error => {
+          console.log(`錯誤：${error}`);
+      }
+    );
+    ```
 * await
   * Promise 中完成會透過 then 來回傳，在 await 中他則是會等待這段函式完成後在往下繼續執行，是一個卡住的概念。
     ```CSS
